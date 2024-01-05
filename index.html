@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Responsive Linktree</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+</script>
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(to right, #241ecc, #178bff,#4985ad );
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+  
+      .link-item {
+        margin: 10px;
+        margin-bottom: 25px;
+        max-width: 530px;
+        background: linear-gradient(to right, #5ebaf7b1, #4675a4b1, #482eccb1);
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.856);
+        transition: box-shadow 0.3s ease;
+        font-size: large;
+      }
+
+      .link-item:hover{
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.807);
+      }
+  
+      .link-item a {
+        text-decoration: none;
+        color: #fff;
+        padding: 10px 20px;
+        display: block;
+        transition: background-color 0.3s ease;
+      }
+  
+      .link-item a:hover {
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+      .pos{
+        position: fixed;
+        top: 10vh;
+        left:70vw;
+        border-radius: 4px;
+        background-color: rgba(240, 255, 255, 0.806);
+      }
+      .logo{
+        display: flexbox;
+        margin-bottom: 20px;
+      }
+      #link-container{
+        display: flexbox;
+        width:550px;
+        text-align: center;
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- <button class="pos cursor-pointer flex flex-col items-center justify-center border w-[40px] h-[40px] rounded-[50%] transition-colors text-black bg-[#F0F0F0] border-[#E2E2E2] hover:bg-[#EBEBEB] active:text-black active:bg-[#E2E2E2] focus:outline-none focus:border-[#D2D2D2] justify-self-end col-start-3" aria-label="Share profile">
+    <svg width="16" height="16" viewBox="0 0 16 16">
+    <path fill="black" stroke="black" d="M12.6661 7.33348C12.2979 7.33348 11.9994 7.63195 11.9994 8.00014C11.9994 8.36833 12.2979 8.66681 12.6661 8.66681C13.0343 8.66681 13.3328 8.36833 13.3328 8.00014C13.3328 7.63195 13.0343 7.33348 12.6661 7.33348Z">
+    </path>
+    <path fill="black" stroke="black" d="M8.00057 7.33348C7.63238 7.33348 7.3339 7.63195 7.3339 8.00014C7.3339 8.36833 7.63238 8.66681 8.00057 8.66681C8.36876 8.66681 8.66724 8.36833 8.66724 8.00014C8.66724 7.63195 8.36876 7.33348 8.00057 7.33348Z">
+    </path>
+    <path fill="black" stroke="black" d="M3.33333 7.33348C2.96514 7.33348 2.66667 7.63195 2.66667 8.00014C2.66667 8.36833 2.96514 8.66681 3.33333 8.66681C3.70152 8.66681 4 8.36833 4 8.00014C4 7.63195 3.70152 7.33348 3.33333 7.33348Z">
+    </path>
+    </svg>
+    </button> -->
+    <div class="box">
+        <div id="link-container">
+            <img src="download.png" class="logo" alt="logo">
+            <div class="link-item">
+              <a href="https://botxestore.com/">Website</a>
+            </div>
+            <div class="link-item">
+              <a href="https://www.youtube.com/@BOTronicX">Youtube</a>
+            </div>
+            <div class="link-item">
+              <a href="https://www.instagram.com/botxofficial_/">Instagram Official</a>
+            </div>
+            <div class="link-item">
+                <a href="https://www.instagram.com/botx_estore/">Instagram Store</a>
+              </div>
+            <div class="link-item">
+                <a href="">twitter</a>
+            </div>
+            <div class="link-item">
+                <a href="https://wa.me/+919048027028">Whatsapp</a>
+            </div>
+            <div class="link-item">
+                <a href="">facebook</a>
+            </div>
+            <div class="link-item">
+                <a href="">Linkdin</a>
+            </div>
+            <!-- Add more link items as needed -->
+          </div>
+    </div>
+    
+  </body>
+</html>
